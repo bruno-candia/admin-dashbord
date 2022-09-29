@@ -26,7 +26,7 @@ export default function Top({ children }) {
 
 
         <div className="adminDiv flex">
-          <TbMessageCircle class='icon' />
+          <TbMessageCircle className='icon' />
           <IoNotificationsOutline className='icon' />
           <div className="adminImage">
             <img src={user} alt="Admin User" />
