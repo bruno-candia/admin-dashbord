@@ -2,7 +2,7 @@ import { React } from 'react';
 import './top.css'
 
 import { BiSearchAlt } from 'react-icons/bi';
-import { BsArrowRightShort } from 'react-icons/bs';
+import { BsArrowRightShort,BsQuestionCircle } from 'react-icons/bs';
 import { TbMessageCircle } from 'react-icons/tb';
 import { IoNotificationsOutline } from 'react-icons/io5';
 
@@ -38,7 +38,7 @@ export default function Top({ children }) {
 
         <div className="rightCard flex">
           <h1>Create and sell extraordinary products</h1>
-          <p>The world's fast growing industry today are<br /> natural made products!</p>
+          <p>The world's fast growing industry today are natural made products!</p>
 
           <div className="buttons flex">
             <button className="btn">
@@ -77,9 +77,8 @@ export default function Top({ children }) {
             <div className="imgDiv">
               <img src={images_1} alt="Persona" />
             </div>
-
-            {/* We shall use this card later... */}
-            {/* <div className="sideBarCard">
+          </div>
+          <div className="sideBarCard">
               <BsQuestionCircle className='icon' />
               <div className="cardContent">
                 <div className="circle1"></div>
@@ -89,9 +88,7 @@ export default function Top({ children }) {
                 <p>Having trouble in Aurem, please contact us from for more question.</p>
                 <button className="btn">Go to help center.</button>
               </div>
-
-            </div> */}
-          </div>
+            </div>
         </div>
       </div>
     </div>

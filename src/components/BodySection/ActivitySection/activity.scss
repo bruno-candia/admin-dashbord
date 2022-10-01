@@ -1,0 +1,72 @@
+@import url('../../../app.css');
+
+.activitySection{
+  flex-basis: 50%;
+
+  .heading{
+    width: 100%;
+    justify-content: space-between;
+
+    h1{
+      font-size: var(--h2FontSize);
+      color: var(--blackColor);
+      font-weight: 700;
+    }
+
+    .btn{
+      border: 1px solid transparent;
+
+      &:hover{
+        border: 1px solid var(--primaryColor);
+      }
+    }
+    
+  }
+  .secContainer{
+    margin-top: 1rem;
+
+    .singleCustomer{
+      align-items: flex-start;
+      justify-content: space-between;
+
+      img{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        box-shadow: 0 2px 4px var(--itemCardColor);
+        object-fit: cover;
+        object-position: top;
+        margin-right: 1rem;
+      }
+
+      .customerDetails{
+        flex: 1;
+
+        .name{
+          font-size: var(--h3FontSize);
+          font-weight: 600;
+          color: var(--blackColor);
+          display: block;
+        }
+
+        small{
+          font-weight: 500;
+          color: var(--textColor);
+          font-size: var(--smallFontSize);
+        }
+      }
+
+      .duration{
+        color: var(--textColor);
+        font-weight: 500;
+        font-size: var(--smallFontSize);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 918px) {
+  .activitySection{
+    width: 100%;
+  }
+}

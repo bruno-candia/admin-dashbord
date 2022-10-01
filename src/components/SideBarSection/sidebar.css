@@ -113,4 +113,42 @@
   width: 150px;
   bottom: -80px;
   right: -70px;
+}
+
+@media screen and (max-width: 820px) {
+  .sideBar {
+    padding-bottom: 2rem;
+  }
+  .sideBar .sideBarCard {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 745px) {
+  .sideBar .logoDiv {
+    margin: auto;
+  }
+  .sideBar .logoDiv img {
+    max-width: 100px;
+    margin: 0;
+  }
+  .sideBar .menuDiv .divTitle, .sideBar .menuDiv .smallText, .sideBar .settingsDiv .divTitle, .sideBar .settingsDiv .smallText {
+    display: none;
+  }
+  .sideBar .menuDiv .menuList .listItem .menuLink, .sideBar .settingsDiv .menuList .listItem .menuLink {
+    justify-content: center;
+  }
+  .sideBar .menuDiv .menuList .listItem .menuLink .icon, .sideBar .settingsDiv .menuList .listItem .menuLink .icon {
+    font-size: var(--h1FontSize);
+  }
+}
+@media screen and (max-width: 390px) {
+  .sideBar .menuDiv .menuList .listItem, .sideBar .settingsDiv .menuList .listItem {
+    padding: 0.2rem 0.5rem;
+  }
+  .sideBar .menuDiv .menuList .listItem .menuLink, .sideBar .settingsDiv .menuList .listItem .menuLink {
+    justify-content: center;
+  }
+  .sideBar .menuDiv .menuList .listItem .menuLink .icon, .sideBar .settingsDiv .menuList .listItem .menuLink .icon {
+    font-size: var(--h2FontSize);
+  }
 }/*# sourceMappingURL=sidebar.css.map */
